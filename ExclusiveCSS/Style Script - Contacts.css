@@ -1,0 +1,120 @@
+.Info {
+	position:absolute;
+	width:100%;
+	display:grid;
+	grid-template-columns: 10% auto 10%;
+	grid-template-rows: 205px 1fr auto;
+	grid-template-areas: 
+		". . ."
+		". first .";
+	
+}
+.firstInformation {
+	grid-area: first;
+	background-color: rgba(71, 141, 255, 0.9);
+	font-family: Roboto Slab;
+	border: solid black 5px;
+}
+.firstInformation  h1{
+	font-size: 3vw;
+	text-align: center;
+}
+.firstInformation  h2{
+	font-size: 2vw;
+	text-align: center;
+}
+@media only screen and (min-width: 1000px){
+    .firstInformation  h1{
+		font-size: 30px;
+		text-align: center;
+	}
+	.firstInformation  h2{
+		font-size: 20px;
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.firstInformation  h2{
+		font-size: 10px;
+		text-align: center;
+	}
+}
+.firstInformation  p{
+	margin-left: 5px;
+}
+
+/*"Contact" Exclusive CSS Code Start*/
+.listOfContacts{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: 
+		"email facebook discord"
+		"youtube steam epicgames";
+	
+}
+@media screen and (max-width: 675px) and (min-width: 451px) {
+	.listOfContacts{
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+		"email facebook"
+		"discord youtube" 
+		"steam epicgames";
+	}
+}
+@media screen and (max-width: 500px) {
+	.listOfContacts{
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+		"email" 
+		"facebook"
+		"discord" 
+		"youtube" 
+		"steam" 
+		"epicgames";
+	}
+}
+.listOfContacts p{
+	text-align:center;
+}
+.headerContacts{
+	font-weight: bold;
+}
+.emailContact{
+	background-color: rgba(50, 255, 50, 0.6);
+	margin: 3px;
+	grid-area: email;
+	border: solid black 2px
+}
+.facebookContact{
+	background-color: rgba(50, 255, 50, 0.6);
+	margin: 3px;
+	grid-area: facebook;
+	border: solid black 2px
+}
+.discordContact{
+	background-color: rgba(50, 255, 50, 0.6);
+	margin: 3px;
+	grid-area: discord;
+	border: solid black 2px
+}
+.youtubeContact{
+	background-color: rgba(50, 255, 50, 0.6);
+	margin: 3px;
+	grid-area: youtube;
+	border: solid black 2px
+}
+.steamContact{
+	background-color: rgba(50, 255, 50, 0.6);
+	margin: 3px;
+	grid-area: steam;
+	border: solid black 2px
+}
+.epicgamesContact{
+	background-color: rgba(50, 255, 50, 0.6);
+	margin: 3px;
+	grid-area: epicgames;
+	border: solid black 2px
+}
+
+/*"Contact" Exclusive CSS Code End*/

@@ -1,0 +1,44 @@
+.Info {
+	position:absolute;
+	width:100%;
+	display:grid;
+	grid-template-columns: 10% auto 10%;
+	grid-template-rows: 205px 1fr auto;
+	grid-template-areas: 
+		". . ."
+		". first .";
+	
+}
+.firstInformation {
+	grid-area: first;
+	background-color: rgba(71, 141, 255, 0.9);
+	font-family: Roboto Slab;
+	border: solid black 5px;
+}
+.firstInformation  h1{
+	font-size: 3vw;
+	text-align: center;
+}
+.firstInformation  h2{
+	font-size: 2vw;
+	text-align: center;
+}
+@media screen and (min-width: 1000px){
+    .firstInformation  h1{
+		font-size: 30px;
+		text-align: center;
+	}
+	.firstInformation  h2{
+		font-size: 20px;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 500px) {
+	.firstInformation  h2{
+		font-size: 10px;
+		text-align: center;
+	}
+}
+.firstInformation  p{
+	margin-left: 5px;
+}

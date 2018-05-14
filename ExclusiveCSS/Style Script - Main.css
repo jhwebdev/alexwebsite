@@ -1,0 +1,293 @@
+
+
+.MainInfo {
+	position:absolute;
+	width:100%;
+	display:grid;
+	grid-template-columns: 5% auto 40px auto 5%;
+	grid-template-rows: 205px repeat(6,auto 40px);
+	grid-template-areas: 
+		". . . . ."
+		". Welcome Welcome Welcome ."
+		". . . . ."
+		". Content-l . Content-r ."
+		". . . . ."
+		". Picture Picture Picture ."
+		". . . . ."
+		". Active Active Active ."
+		". . . . ."
+		". Slideshow Slideshow Slideshow ."
+		". . . . ."
+		". Clicker Clicker Clicker ."
+		". . . . .";
+	
+}
+
+.MainInfo  h1{
+	font-size: 3vw;
+	text-align: center;
+}
+.MainInfo  h2{
+	font-size: 2vw;
+	text-align: center;
+}
+
+.MainInfo  p{
+	margin-left: 5px;
+}
+
+.Welcome {
+	grid-area: Welcome;
+	background-color: rgba(71, 141, 255, 0.9);
+	font-family: Roboto Slab;
+	border: solid black 5px;
+}
+
+.Interests {
+	grid-area: Content-l;
+	background-color: rgba(71, 141, 255, 0.9);
+	font-family: Roboto Slab;
+	border: solid black 5px;
+}
+
+.Hobbies {
+	grid-area: Content-r;
+	background-color: rgba(71, 141, 255, 0.9);
+	font-family: Roboto Slab;
+	border: solid black 5px;
+}
+.Pictures {
+	grid-area: Picture;
+	background-color: rgba(71, 141, 255, 0.9);
+	font-family: Roboto Slab;
+	border: solid black 5px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-bottom: 20px;
+}
+.Active {
+	grid-area: Active;
+	background-color: rgba(71, 141, 255, 0.9);
+	font-family: Roboto Slab;
+	border: solid black 5px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-bottom: 20px;
+}
+.Slideshow{
+	grid-area: Slideshow;
+	background-color: rgba(71, 141, 255, 0.9);
+	font-family: Roboto Slab;
+	border: solid black 5px;
+	display: flex;
+	align-items: center;
+	flex-direction:column;
+	flex-wrap: wrap;
+	padding-bottom: 20px;
+}
+.Clicker{
+	grid-area: Clicker;
+	background-color: rgba(71, 141, 255, 0.9);
+	font-family: Roboto Slab;
+	border: solid black 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction:column;
+	flex-wrap: wrap;
+	padding-bottom: 20px;
+}
+
+
+
+
+.MainInfo img{
+	border: solid black 4px;
+	margin: 5px;
+	height: 350px;
+}
+.Pictures h1{
+	width: 100%;
+}
+
+.Slides{
+	position:relative;
+	margin: 20px;
+	margin-bottom: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.SlidesImage{
+	display:none;
+	
+}
+.SlidesImage img{
+	margin: 0px;
+	height: 350px;
+	border: solid black 4px;
+	padding: 0px;
+}
+.SlidesNext{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height:100px;
+	width:50px;
+	background-color: rgba(20, 20, 20, 0.5);
+}
+.SlidesPrev{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height:100px;
+	width:50px;
+	background-color: rgba(20, 20, 20, 0.5);
+}
+.SlideButtons{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	font-weight: bolder;
+	margin-top: 10px;
+	font-size: 20px;
+	
+}
+/*ClickerGame CSS*/
+.ClickerUI{
+	flex-direction:column;
+	display: flex;
+	align-items: center;
+}
+.ClickerClicks{
+	display: flex;
+	align-items: center;
+}
+.Clicker img{
+	border: solid black 0px;
+	width: 100%;
+}
+.ClickerButton{
+	display: flex;
+	align-items: center;
+	margin: 0;
+	border: solid black 0px;
+	width: 100%;
+}
+.ClickerShopUI{
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	width: 100%;
+}
+.ClickerShopUI .ClickerUI h5,p{
+	margin:0;
+}
+.ClickerStuff{
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	
+}
+.ClickerIncrease, .ClickerHelper, .ClickerTrophy{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-evenly;
+	flex-direction: column;
+	align-items: center;
+	background-color:gray;
+	border: solid black 5px;
+	width:20vw;
+	height:20vw;
+	font-weight:bolder;
+	font-size:2vw;
+	
+}
+.Clicker2Paras{
+	display:flex;
+}
+.ClickerBigScreen{
+	display:block;
+}
+.ClickerMobileScreen{
+	display:none;
+}
+@media screen and (min-width: 1000px){
+    .MainInfo  h1{
+		font-size: 30px;
+		text-align: center;
+	}
+	.MainInfo  h2{
+		font-size: 20px;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 800px) {
+	.MainInfo  h2{
+		font-size: 30px;
+		text-align: center;
+	}
+	.MainInfo  h1{
+		font-size: 20px;
+		text-align: center;
+	}
+	.MainInfo {
+		grid-template-columns: 2% auto 40px auto 2%;
+		grid-template-rows: 205px repeat(8,auto 40px);
+		grid-template-areas: 
+			". . . . ."
+			". Welcome Welcome Welcome ."
+			". . . . ."
+			". Content-l Content-l Content-l ."
+			". . . . ."
+			". Content-r Content-r Content-r ."
+			". . . . ."
+			". Picture Picture Picture ."
+			". . . . ."
+			". Active Active Active ."
+			". . . . ."
+			". Slideshow Slideshow Slideshow ."
+			". . . . ."
+			". Clicker Clicker Clicker ."
+			". . . . .";
+		
+	}
+	.MainInfo img{
+		height: 35vw;
+		width: 55vw;
+	}
+	.SlidesPrev , .SlidesNext{
+		height: 20vw;
+		width:10vw;
+	}
+	.Clicker img{
+		border: solid black 0px;
+		width: 100%;
+	}
+	.ClickerButton{
+		display: flex;
+		align-items: center;
+		flex-direction:column;
+		margin: 0;
+		width: 100%;
+	}
+	.ClickerBigScreen{
+		display:none;
+	}
+	.ClickerMobileScreen{
+		display:block;
+	}
+	.ClickerUI{
+		display:flex;
+		flex-direction:row;
+		justify-content: space-around;
+		width:100%;
+	}
+}
+.secretTwoText
+{
+	display:none;
+}
