@@ -31,7 +31,7 @@ body {
 	width:100%;
 	background-color: rgba(150, 150, 150, 0.9);
 	position: fixed;
-	z-index: 10;
+	z-index: 1;
 	top:0;
 	display:grid;
 	grid-template-columns: 110px auto 50px;
@@ -249,5 +249,13 @@ body {
     33%  { background-color:green;}
     66%  { background-color:blue;}
     100% { background-color:red;}
+}
+.verySpinny{
+	border-radius: 2000px;
+    animation: spinnyCycle 15s linear infinite;
+}
+@keyframes spinnyCycle {
+    0%   { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
 }
 
