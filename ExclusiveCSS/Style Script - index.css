@@ -5,7 +5,7 @@
 	width:100%;
 	display:grid;
 	grid-template-columns: 5% auto 40px auto 5%;
-	grid-template-rows: 205px repeat(6,auto 40px);
+	grid-template-rows: 205px repeat(8,auto 40px);
 	grid-template-areas: 
 		". . . . ."
 		". Welcome Welcome Welcome ."
@@ -19,6 +19,8 @@
 		". Slideshow Slideshow Slideshow ."
 		". . . . ."
 		". Clicker Clicker Clicker ."
+		". . . . ."
+		". PHPForm PHPForm PHPForm ."
 		". . . . .";
 	
 }
@@ -99,9 +101,48 @@
 	flex-wrap: wrap;
 	padding-bottom: 20px;
 }
-
-
-
+.PHPTest{
+	grid-area: PHPForm;
+	background-color: rgba(71, 141, 255, 0.9);
+	font-family: Roboto Slab;
+	border: solid black 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction:column;
+	flex-wrap: wrap;
+	padding-bottom: 20px;
+}
+.SignupSection{
+	display: flex;
+	align-items: left;
+	justify-content: center;
+	flex-direction:column;
+	flex-wrap: wrap;
+}
+.SparElements{
+	display:flex;
+}
+.SparElementsRow{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	margin-bottom:10px;
+}
+.SparElementsColumn{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	margin-bottom:10px;
+	width:100%;
+}
+.PHPTest fieldset{
+	border:solid black 3px;
+	
+}
+.GOSpecify{
+	display:none;
+}
 .secretOne{
 	width:100%;
 	
@@ -211,9 +252,7 @@
 	font-size:2vw;
 	
 }
-.Clicker2Paras{
-	display:flex;
-}
+
 .ClickerBigScreen{
 	display:block;
 }
@@ -262,6 +301,8 @@
 			". Slideshow Slideshow Slideshow ."
 			". . . . ."
 			". Clicker Clicker Clicker ."
+			". . . . ."
+			". PHPForm PHPForm PHPForm ."
 			". . . . .";
 		
 	}
@@ -295,6 +336,9 @@
 		flex-direction:row;
 		justify-content: space-around;
 		width:100%;
+	}
+	.PHPTest p{
+		font-size:3vw;
 	}
 }
 .secretTwoText

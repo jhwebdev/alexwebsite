@@ -23,3 +23,27 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+
+
+
+
+var RSGButton = document.getElementById("RSGButton");
+RSGButton.onclick = function() {
+
+  var Noun = ["A child", "Alex","Gabe","Greg","A father", "A mother"];
+  var Action = ["summoned a portal to hell", "dug a grave", "created a nuclear fusion reactor"];
+  var Place = ["at home", "at a nearby park", "on an island", "at a public school"];
+  var Time = ["after probation","after their child ran away from home"];
+
+  myNoun = Noun[Math.round(Math.random()*(Noun.length-1))];
+  myAction = Action[Math.round(Math.random()*(Action.length-1))];
+  myPlace = Place[Math.round(Math.random()*(Place.length-1))];
+  myTime = Time[Math.round(Math.random()*(Time.length-1))];
+
+  document.getElementById("RSGNoun").innerHTML = myNoun;
+  document.getElementById("RSGAction").innerHTML =myAction;
+  document.getElementById("RSGPlace").innerHTML = myPlace;
+  document.getElementById("RSGTime").innerHTML = myTime;
+
+}

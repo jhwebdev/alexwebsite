@@ -62,9 +62,10 @@ body {
 .navbarToggle{
 	grid-area: toggle;
 	background-color: rgb(20,50,50);
-	border-left: solid red 2px;
+	border-left: solid rgba(255,255,255, 0.5) 2px;
 	font-family: Roboto Slab;
 	display:flex;
+	color:rgba(255,255,255, 0.5);
 	justify-content:space-around;
 	align-items:center;
 }

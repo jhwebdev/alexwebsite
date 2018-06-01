@@ -194,3 +194,22 @@ function CHelper()
 	CDisplay.textContent = ClickCount;
 	setTimeout(CHelper,CHelperInterval);
 }
+var SPGSMale = document.querySelector('.GMale');
+var SPGSFemale = document.querySelector('.GFemale');
+var SPGSOther = document.querySelector('.GOther');
+var SPGSOSpecify = document.querySelector('.GOSpecify');
+var SPGSOSText = document.querySelector('.GOSText');
+
+SPGSFemale.onclick = function(){
+	SPGSOSpecify.setAttribute("style","display:none");
+	SPGSOSText.setAttribute("name","");
+}
+SPGSMale.onclick = function(){
+	SPGSOSpecify.setAttribute("style","display:none");
+	SPGSOSText.setAttribute("name","");
+}
+SPGSOther.onclick = function(){
+	SPGSOSpecify.setAttribute("style","display:flex");
+	SPGSOSText.setAttribute("name","OtherSpecify");
+}
+

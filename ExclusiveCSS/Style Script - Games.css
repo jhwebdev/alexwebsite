@@ -2,7 +2,7 @@
 	position:absolute;
 	width:100%;
 	display:grid;
-	grid-template-columns: 10% 80% 10%;
+	grid-template-columns: 10% auto 10%;
 	grid-template-rows: 205px 1fr repeat(8, 20px auto);
 	grid-template-areas: 
 		". . ."
@@ -43,7 +43,10 @@
 		text-align: center;
 	}
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
+	.Info {
+		grid-template-columns: 2% auto 2%;
+	}
 	.Info  h1{
 		font-size: 30px;
 		text-align: center;
